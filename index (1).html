@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kuldeep Chelak | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="wrap"><nav>
+<a href="#home" class="logo">Kuldeep<span>.</span></a>
+<ul class="links" id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+<li><button class="icon-btn" id="theme" aria-label="Toggle theme">◐</button></li>
+</ul>
+<button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+</nav></div>
+</header>
+
+<main>
+<section class="hero" id="home"><div class="wrap grid">
+<div>
+<span class="tag">Hello, I'm</span>
+<h1><span class="grad">Kuldeep Chelak</span></h1>
+<p>Student at <b>Rungta International University</b>, building clean, responsive and user-friendly web experiences with HTML, CSS and JavaScript.</p>
+<div class="btns"><a href="#projects" class="btn primary">View Projects</a><a href="#contact" class="btn ghost">Contact Me</a></div>
+</div>
+<div class="avatar" aria-hidden="true">KC</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<span class="tag">About</span><h2>Who I am</h2><p class="sub">A curious learner who enjoys turning ideas into working products.</p>
+<div class="about reveal">
+<p>I'm Kuldeep Chelak, studying at Rungta International University. I love crafting web interfaces that look modern and work well on every screen. I'm always exploring new tools, solving problems and improving my craft one project at a time.</p>
+<div class="facts">
+<div class="fact"><b data-n="10">0</b>Projects</div>
+<div class="fact"><b data-n="3">0</b>Core Languages</div>
+<div class="fact"><b data-n="100">0</b>% Curiosity</div>
+<div class="fact"><b data-n="1">0</b>University</div>
+</div></div></div></section>
+
+<section id="skills"><div class="wrap">
+<span class="tag">Skills</span><h2>What I work with</h2><p class="sub">Technologies I use to build for the web.</p>
+<div class="about reveal">
+<div>
+<div class="skill"><div><span>HTML5</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+<div class="skill"><div><span>CSS3</span><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+<div class="skill"><div><span>JavaScript</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+<div class="skill"><div><span>Responsive Design</span><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+</div>
+<div class="cards">
+<div class="card"><h3>Frontend</h3><p>Semantic markup, modern layouts with Flexbox and Grid.</p></div>
+<div class="card"><h3>Tools</h3><p>Git, GitHub, VS Code and browser dev tools.</p></div>
+</div></div></div></section>
+
+<section id="projects"><div class="wrap">
+<span class="tag">Projects</span><h2>Selected work</h2><p class="sub">Replace these samples with your own projects.</p>
+<div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="js">JavaScript</button></div>
+<div class="cards">
+<article class="card" data-c="web"><div class="thumb">🌐</div><h3>Personal Website</h3><p>A responsive site showcasing my profile and work.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div></article>
+<article class="card" data-c="js"><div class="thumb t2">✅</div><h3>To-Do App</h3><p>Add, complete and delete tasks with a clean interface.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">DOM</span></div></article>
+<article class="card" data-c="web"><div class="thumb t3">🛍️</div><h3>Landing Page</h3><p>A modern product landing page with smooth animations.</p><div class="chips"><span class="chip">CSS3</span><span class="chip">Grid</span></div></article>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<span class="tag">Education</span><h2>My journey</h2><p class="sub">Where I'm learning and growing.</p>
+<div class="timeline reveal">
+<div class="tl"><small>Present</small><h3>Rungta International University</h3><p style="color:var(--muted);margin:0">Pursuing my degree while building practical web development skills.</p></div>
+<div class="tl"><small>Ongoing</small><h3>Self-Learning</h3><p style="color:var(--muted);margin:0">Hands-on projects with HTML5, CSS3 and JavaScript.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<span class="tag">Contact</span><h2>Let's connect</h2><p class="sub">Have an idea or opportunity? Send me a message.</p>
+<div class="contact reveal">
+<div class="cards" style="grid-template-columns:1fr">
+<div class="card"><h3>📍 University</h3><p>Rungta International University</p></div>
+<div class="card"><h3>✉️ Email</h3><p>your-email@example.com</p></div>
+</div>
+<form id="form" novalidate>
+<input id="name" placeholder="Your name" required>
+<input id="email" type="email" placeholder="Your email" required>
+<textarea id="text" rows="5" placeholder="Your message" required></textarea>
+<button class="btn primary" type="submit">Send Message</button>
+<div id="msg" role="status"></div>
+</form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Kuldeep Chelak · Rungta International University</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
